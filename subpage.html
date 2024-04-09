@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>collection page</title>
+  <link rel="stylesheet" href="subpagestyle.css">
+  <style>
+    /* 子页面基本样式 */
+    header {
+      position: relative; /* 创建定位上下文 */
+    }
+
+    h1 {
+      position: absolute; /* 绝对定位 */
+      top: 0;             /* 与顶部对齐 */
+      left: 0;            /* 与左侧对齐 */
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    /* 下载按钮样式 */
+    .download-button {
+      display: inline-block;
+      margin-left: 50px;
+      padding: 0..png;
+      font-size: 0..jpg;
+      line-height: 1.5;
+      background-color: #0044fffa;
+      color: white;
+      border-radius: 0.3rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .download-button:hover {
+      background-color: #0069d9;
+    }
+
+    /* PDF条目样式 */
+    .pdf-item {
+      margin-bottom: 20px;
+    }
+
+    .pdf-item img {
+      width: ¼;
+      height: auto;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    /* 文本与下载按钮部分 */
+    .pdf-text {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="pdf-item" style="margin-left: 30px;">
+      <p class="image-caption">这是图片上方的文本</p>
+      <img src="symptoms.jpg" alt="PDF 2 Thumbnail" style="width: 500px; height: 200px;">
+      <div class="pdf-text" style="font-size: 1.2em;">
+        <a href="北京福彩.pdf" onclick="changePdf('pdf2')">View</a>
+        <a class="download-button" href="北京福彩.pdf" download>Download</a>
+      </div>
+    </li>
+    <li class="pdf-item" style="margin-left: 30px;">
+      <p class="image-caption">这是图片上方的文本</p>
+      <img src="safeT.jpg" alt="PDF 2 Thumbnail" style="width: 500px; height: 200px;">
+      <div class="pdf-text" style="font-size: 1.2em;">
+        <a href="北京福彩.pdf" onclick="changePdf('pdf2')">View</a>
+        <a class="download-button" href="北京福彩.pdf" download>Download</a>
+      </div>
+    </li>
+    <li class="pdf-item" style="margin-left: 30px;">
+      <p class="image-caption">这是图片上方的文本</p>
+      <img src="picPRO.png" alt="PDF 2 Thumbnail" style="width: 500px; height: 200px;">
+      <div class="pdf-text" style="font-size: 1.2em;">
+        <a href="北京福彩.pdf" onclick="changePdf('pdf2')">View</a>
+        <a class="download-button" href="北京福彩.pdf" download>Download</a>
+      </div>
+    </li>
+  </ul>
+
+  <script>
+    function changePdf(pdfName) {
+      const iframe = document.getElementById('pdfViewer');
+      iframe.src = pdfName + '.pdf';
+    }
+  </script>
+</body>
+
+</html>

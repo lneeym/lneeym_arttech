@@ -1,0 +1,59 @@
+/* 基本样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* 设置背景图片 */
+    background-image: url('background.jpg'); /* 替换为您的实际图片路径 */
+    background-repeat: no-repeat; /* 避免图片重复 */
+    background-position: center; /* 图片居中对齐 */
+    background-size: cover; /* 背景图片自适应容器大小，保持填充且不失真 */
+    height: 100vh; /* 使整个页面高度等于视口高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* 更改字体以适应您的设计 */
+  }
+  
+  .content {
+    /* 在此添加内容区域的样式 */
+    width: 90%; /* 示例宽度，可按需调整 */
+    max-width: 960px; /* 最大宽度限制，避免过大 */
+    text-align: center;
+    color: #fff; /* 文本颜色为白色，确保在深色背景下清晰可见 */
+  }
+  
+.bi-folder {
+  display: inline-block;
+  width: 64px; /* 设置图标宽度 */
+  height: 64px; /* 设置图标高度 */
+  background-color: #c0e5f7; /* 设置为Mac系统文件夹的浅蓝色 */
+  border-radius: 8px; /* 添加圆角 */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1); /* 添加外阴影和内阴影，模仿立体效果 */
+
+  /* 如果使用内联SVG图标 */
+  & > svg {
+    fill: #3b99fc; /* 设置SVG图标颜色为Mac系统文件夹的深蓝色 */
+  }
+
+}
+
+.folder-icon:hover {
+    cursor: pointer;
+    /* 可选：添加其他悬停效果，如背景色变化、边框变化等 */
+  }
+  
+.folder-icon svg {
+    cursor: pointer;
+  }
+  
+  /* 添加其他页面元素的样式 */
+  /* .content h1,
+  .content p,
+  .content button {
+    ...
+  } */

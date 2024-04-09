@@ -1,0 +1,18 @@
+body {
+    background-image: url('subpage.jpeg');
+    background-repeat: no-repeat; /* 避免图片重复 */
+    background-position: center; /* 图片居中对齐 */
+    background-size: cover; /* 背景图片自适应容器大小，保持填充且不失真 */
+    height: 100vh; /* 使整个页面高度等于视口高度 */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    font-family: 'Times New Roman', Times, serif; /* 更改字体以适应您的设计 */
+  }
+
+
+.image-caption {
+    color: #fffefe;
+    font-size: 14px;
+    margin-bottom: 10px; /* 为图片与文本之间添加间距 */
+  }
